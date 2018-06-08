@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.example.priya_000.calculator.MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:lines="7"
+        android:maxLines="7"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+
+
+    <Button
+        android:id="@+id/key7"
+        style="@style/AlertDialog.AppCompat"
+        android:layout_width="95dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/edit"
+        android:onClick="onClick"
+        android:text="7"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/key8"
+        android:layout_width="95dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/edit"
+        android:layout_toRightOf="@+id/key7"
+        android:onClick="onClick"
+        android:text="8"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/key9"
+        android:layout_width="95dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/edit"
+        android:layout_toRightOf="@+id/key8"
+        android:onClick="onClick"
+        android:text="9"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/key4"
+        android:layout_width="95dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/key7"
+        android:onClick="onClick"
+        android:text="4"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/key5"
+        android:layout_width="95dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/key8"
+        android:layout_toRightOf="@+id/key7"
+        android:onClick="onClick"
+        android:text="5"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/key6"
+        android:layout_width="95dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/key9"
+        android:layout_toRightOf="@+id/key8"
+        android:onClick="onClick"
+        android:text="6"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/key1"
+        android:layout_width="95dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/key4"
+        android:onClick="onClick"
+        android:text="1"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/key2"
+        android:layout_width="95dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/key5"
+        android:layout_toRightOf="@+id/key7"
+        android:onClick="onClick"
+        android:text="2"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/key3"
+        android:layout_width="95dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/key6"
+        android:layout_toRightOf="@+id/key8"
+        android:onClick="onClick"
+        android:text="3"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/keydot"
+        android:layout_width="95dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/key1"
+        android:onClick="onClick"
+        android:text="."
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/keyzero"
+        android:layout_width="95dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/key2"
+        android:layout_toRightOf="@+id/key7"
+        android:onClick="onClick"
+        android:text="0"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/keyequal"
+        android:layout_width="95dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/key3"
+        android:layout_toRightOf="@+id/key8"
+        android:onClick="onClick"
+        android:text="="
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/keydiv"
+        android:layout_width="95dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/edit"
+        android:layout_toRightOf="@+id/key9"
+        android:text="/"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/keymul"
+        android:layout_width="95dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/keydiv"
+        android:layout_toRightOf="@+id/key6"
+        android:onClick="onClick"
+        android:text="*"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/keysub"
+        android:layout_width="95dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/keymul"
+        android:layout_toRightOf="@+id/key3"
+        android:onClick="onClick"
+        android:text="-"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/keyadd"
+        android:layout_width="95dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/keysub"
+        android:layout_toRightOf="@+id/keyequal"
+        android:onClick="onClick"
+        android:text="+"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/keyback"
+        android:layout_width="190dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/keyadd"
+        android:layout_toRightOf="@+id/keyzero"
+        android:onClick="onClick"
+        android:text="X"
+        android:layout_marginBottom="0px"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/keyclear"
+        android:layout_width="190dp"
+        android:layout_height="56dp"
+        android:onClick="onClick"
+        android:text="C"
+        android:textStyle="bold"
+        android:layout_below="@+id/keyzero"
+        android:layout_alignEnd="@+id/view2" />
+
+
+</RelativeLayout>
